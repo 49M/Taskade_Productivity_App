@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+  Copyright (c) 2015, 2019, Gluon and/or its affiliates.
+  All rights reserved. Use is subject to license terms.
+
+  This file is available and licensed under the following license:
+
+  Redistribution and use in source and binary forms, with or without
+  modification, are permitted provided that the following conditions
+  are met:
+
+  - Redistributions of source code must retain the above copyright
+    notice, this list of conditions and the following disclaimer.
+  - Redistributions in binary form must reproduce the above copyright
+    notice, this list of conditions and the following disclaimer in
+    the documentation and/or other materials provided with the distribution.
+  - Neither the name of Oracle Corporation nor the names of its
+    contributors may be used to endorse or promote products derived
+    from this software without specific prior written permission.
+
+  THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+  "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+  LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+  A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
+  OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+  SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+  LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+  DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+  THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+  (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+  OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+-->
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<VBox prefHeight="700.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FinanceSectionController">
+  <children>
+    <HBox id="HBox" alignment="CENTER_LEFT" spacing="5.0" VBox.vgrow="NEVER">
+      <children>
+        <Label maxHeight="1.7976931348623157E308" maxWidth="-1.0" prefHeight="14.0" prefWidth="56.0" text="Finance" HBox.hgrow="ALWAYS">
+          <font>
+            <Font size="11.0" fx:id="x3" />
+          </font>
+          <textFill>
+            <Color red="0.625" green="0.625" blue="0.625" fx:id="x4" />
+          </textFill>
+        </Label>
+        <Pane prefHeight="-1.0" prefWidth="-1.0" style="-fx-border-color: grey;" HBox.hgrow="ALWAYS" />
+        <Label fx:id="DateTime" font="$x3" maxWidth="-1.0" prefHeight="14.0" prefWidth="81.0" HBox.hgrow="NEVER" />
+      </children>
+      <padding>
+        <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+      </padding>
+    </HBox>
+      <AnchorPane prefHeight="686.0" prefWidth="1100.0" style="-fx-background-color: #a6c5f7;">
+         <children>
+            <Label alignment="CENTER" layoutX="27.0" layoutY="57.0" prefHeight="35.0" prefWidth="125.0" text="My Finance">
+               <font>
+                  <Font name="Arial Black" size="18.0" />
+               </font>
+            </Label>
+            <Separator layoutX="176.0" layoutY="-1.0" orientation="VERTICAL" prefHeight="700.0" prefWidth="12.0" />
+            <VBox layoutX="28.0" layoutY="129.0" prefHeight="247.0" prefWidth="128.0" spacing="12.0">
+               <children>
+                  <Button fx:id="personalDataButton" mnemonicParsing="false" onMousePressed="#navigationButtonClick" prefHeight="25.0" prefWidth="142.0" style="-fx-border-color: black; -fx-background-radius: 15; -fx-border-radius: 15;" text="Personal Data">
+                     <font>
+                        <Font name="Arial" size="12.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="budgetButton" mnemonicParsing="false" onMousePressed="#navigationButtonClick" prefHeight="25.0" prefWidth="134.0" style="-fx-border-color: black; -fx-background-radius: 15; -fx-border-radius: 15;" text="Budget">
+                     <font>
+                        <Font name="Arial" size="12.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="stockSearchButton" mnemonicParsing="false" onMousePressed="#navigationButtonClick" prefHeight="25.0" prefWidth="156.0" style="-fx-border-color: black; -fx-background-radius: 15; -fx-border-radius: 15;" text="Stock Search">
+                     <font>
+                        <Font size="12.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="watchlistButton" mnemonicParsing="false" onMousePressed="#navigationButtonClick" prefHeight="25.0" prefWidth="139.0" style="-fx-border-color: black; -fx-background-radius: 15; -fx-border-radius: 15;" text="Watchlist">
+                     <font>
+                        <Font size="12.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="backToHomeButton" mnemonicParsing="false" onMousePressed="#navigationButtonClick" prefHeight="25.0" prefWidth="139.0" style="-fx-border-color: black; -fx-background-radius: 15; -fx-border-radius: 15;" text="Back to Home">
+                     <font>
+                        <Font size="12.0" />
+                     </font>
+                  </Button>
+               </children>
+            </VBox>
+            <VBox layoutX="255.0" layoutY="160.0" prefHeight="306.0" prefWidth="343.0">
+               <children>
+                  <Label prefHeight="24.0" prefWidth="343.0" text="Full Name:">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="fullNameSlot" prefHeight="26.0" prefWidth="511.0" />
+                  <Label prefHeight="24.0" prefWidth="343.0" text="Email:">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="emailSlot" prefHeight="26.0" prefWidth="511.0" />
+                  <Label prefHeight="24.0" prefWidth="343.0" text="phone:">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="phoneSlot" prefHeight="26.0" prefWidth="511.0" />
+                  <Label prefHeight="24.0" prefWidth="343.0" text="Start Capital:">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="startCapitalSlot" prefHeight="26.0" prefWidth="511.0" />
+                  <Label prefHeight="24.0" prefWidth="343.0" text="Capital Goal:">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="capitalGoalSlot" prefHeight="26.0" prefWidth="511.0" />
+                  <Label prefHeight="24.0" prefWidth="343.0" text="Plan of Action:">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="planOfActionSlot" prefHeight="26.0" prefWidth="511.0" />
+               </children>
+            </VBox>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="321.0" layoutY="47.0" prefHeight="17.0" prefWidth="515.0" text="Personal Data">
+               <font>
+                  <Font name="System Bold" size="35.0" />
+               </font>
+            </Label>
+            <Button fx:id="saveData" alignment="CENTER" layoutX="266.0" layoutY="477.0" mnemonicParsing="false" onMouseClicked="#saveDataClick" style="-fx-background-color: #f7d2f2; -fx-background-radius: 15;" text="Save" textAlignment="CENTER">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+  </children>
+</VBox>

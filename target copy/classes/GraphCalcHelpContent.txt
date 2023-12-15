@@ -1,0 +1,27 @@
+Graph any kind of mathematical equation!
+Plot a point on the cartesian plane!
+Adjust the range for a better view!
+
+The following operations are supported:
+1. Addition: '2 + 2'
+2. Subtraction: '2 - 2'
+3. Multiplication: '2 * 2'
+4. Division: '2 / 2'
+5. Exponential: '2 ^ 2'
+
+The following functions are supported:
+1. abs: absolute value
+2. sin: sine
+3. asin: inverse sine
+4. sinh: hyperbolic sine
+5. cos: cosine
+6. acos: inverse cosine
+7. cosh: hyperbolic cosine
+8. tan: tangent
+9. atan: inverse tangent
+10. tanh: hyperbolic tangent
+11. sqrt: square root
+12. cbrt: cubic root
+13. log: logarithmus naturalis (base e)
+14. exp: euler's number raised to the power (e^x)
+15. floor: nearest lower integer

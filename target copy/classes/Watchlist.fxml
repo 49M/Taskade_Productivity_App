@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<VBox prefHeight="700.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="WatchlistController">
+  <children>
+    <HBox id="HBox" alignment="CENTER_LEFT" spacing="5.0" VBox.vgrow="NEVER">
+      <children>
+        <Label maxHeight="1.7976931348623157E308" maxWidth="-1.0" prefHeight="14.0" prefWidth="56.0" text="Finance" HBox.hgrow="ALWAYS">
+          <font>
+            <Font size="11.0" fx:id="x3" />
+          </font>
+          <textFill>
+            <Color red="0.625" green="0.625" blue="0.625" fx:id="x4" />
+          </textFill>
+        </Label>
+        <Pane prefHeight="-1.0" prefWidth="-1.0" style="-fx-border-color: grey;" HBox.hgrow="ALWAYS" />
+        <Label fx:id="DateTime" font="$x3" maxWidth="-1.0" prefHeight="14.0" prefWidth="81.0" HBox.hgrow="NEVER" />
+      </children>
+      <padding>
+        <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+      </padding>
+    </HBox>
+      <AnchorPane prefHeight="695.0" prefWidth="1100.0" style="-fx-background-color: #a6c5f7;">
+         <children>
+            <Label alignment="CENTER" layoutX="27.0" layoutY="57.0" prefHeight="35.0" prefWidth="125.0" text="My Finance">
+               <font>
+                  <Font name="Arial Black" size="18.0" />
+               </font>
+            </Label>
+            <Separator layoutX="176.0" layoutY="-1.0" orientation="VERTICAL" prefHeight="700.0" prefWidth="12.0" />
+            <VBox layoutX="28.0" layoutY="129.0" prefHeight="247.0" prefWidth="128.0" spacing="12.0">
+               <children>
+                  <Button fx:id="personalDataButton4" mnemonicParsing="false" onMousePressed="#navigationButtonClick" prefHeight="25.0" prefWidth="142.0" style="-fx-border-color: black; -fx-background-radius: 15; -fx-border-radius: 15;" text="Personal Data">
+                     <font>
+                        <Font name="Arial" size="12.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="budgetButton4" mnemonicParsing="false" onMousePressed="#navigationButtonClick" prefHeight="25.0" prefWidth="134.0" style="-fx-border-color: black; -fx-background-radius: 15; -fx-border-radius: 15;" text="Budget">
+                     <font>
+                        <Font name="Arial" size="12.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="stockSearchButton4" mnemonicParsing="false" onMousePressed="#navigationButtonClick" prefHeight="25.0" prefWidth="156.0" style="-fx-border-color: black; -fx-background-radius: 15; -fx-border-radius: 15;" text="Stock Search">
+                     <font>
+                        <Font size="12.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="watchlistButton4" mnemonicParsing="false" onMousePressed="#navigationButtonClick" prefHeight="25.0" prefWidth="139.0" style="-fx-background-color: #f7d2f2; -fx-background-radius: 15; -fx-border-radius: 15; -fx-border-color: black;" text="Watchlist">
+                     <font>
+                        <Font size="12.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="backToHomeButton4" mnemonicParsing="false" onMousePressed="#navigationButtonClick" prefHeight="25.0" prefWidth="139.0" style="-fx-border-color: black; -fx-background-radius: 15; -fx-border-radius: 15;" text="Back to Home">
+                     <font>
+                        <Font size="12.0" />
+                     </font>
+                  </Button>
+               </children>
+            </VBox>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="378.0" layoutY="35.0" prefHeight="17.0" prefWidth="515.0" text="Watchlist">
+               <font>
+                  <Font name="System Bold" size="35.0" />
+               </font>
+            </Label>
+            <TableView fx:id="watchlistTable" layoutX="399.0" layoutY="112.0" prefHeight="406.0" prefWidth="462.0">
+              <columns>
+                <TableColumn fx:id="ticker" prefWidth="107.92190551757812" text="Ticker" />
+                <TableColumn fx:id="price" minWidth="6.6900634765625" prefWidth="113.42068481445312" text="Price" />
+                  <TableColumn fx:id="dollarChange" minWidth="6.6900634765625" prefWidth="117.6925048828125" text="\$ Change Today" />
+                  <TableColumn fx:id="percentChange" minWidth="6.6900634765625" prefWidth="121.80743408203125" text="\% Change Today" />
+              </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+  </children>
+</VBox>

@@ -1,0 +1,11 @@
+.graphCalcButtons {
+    -fx-background-color: white;
+    -fx-background-radius: 20;
+    -fx-border-radius: 30;
+    -fx-width: 90;
+    -fx-height: 30;
+    -fx-font-size: 15px;
+    -fx-font-family: calibri;
+    -fx-font-weight: bold;
+    -fx-text-fill:  gray;
+}
