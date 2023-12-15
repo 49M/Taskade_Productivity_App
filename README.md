@@ -1,13 +1,13 @@
 This was a group project. My code is the Finance Section which includes the following files in src/main:
-BudgetController.java
-FinanceSectionController.java
-StockSearchController.java
-Watchlist.java
-WatchlistController.java
-budgetData.text
-personalData.text
-watchlistStocks.text
-Main.java
+BudgetController.java, 
+FinanceSectionController.java, 
+StockSearchController.java, 
+Watchlist.java, 
+WatchlistController.java, 
+budgetData.text, 
+personalData.text, 
+watchlistStocks.text, 
+Main.java. 
 
 
 These files are responsible for the personal finance section of the app. 
